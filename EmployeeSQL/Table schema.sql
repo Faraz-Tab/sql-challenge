@@ -1,5 +1,4 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
+﻿-- creating the tables using the schema model from website
 
 
 CREATE TABLE "departments" (
@@ -23,11 +22,11 @@ CREATE TABLE "department_manager" (
 CREATE TABLE "employees" (
     "emp_no" INT   NOT NULL,
     "emp_title" CHAR(5)   NOT NULL,
-    "birth_date" DATE   NOT NULL,
+    "birth_date" VARCHAR(255)   NOT NULL,
     "first_name" VARCHAR(255)   NOT NULL,
     "last_name" VARCHAR(255)   NOT NULL,
     "sex" CHAR   NOT NULL,
-    "hire_date" DATE   NOT NULL,
+    "hire_date" VARCHAR(255)   NOT NULL,
     CONSTRAINT "pk_employees" PRIMARY KEY (
         "emp_no"
      )
